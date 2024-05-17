@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+  --bg-purple-light:#9E3CE1;
+  --bg-border:#AAAAAA;
+}
+
+.padding-section{
+    padding-top: 7rem;
+}
+
+.underline{
+    text-decoration: underline; text-decoration-color: var(--bg-purple-light); text-underline-offset: 10px
+}
+
+
+body{
+  font-family: "Poppins", "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+main{
+    height: 100%;
+    margin: 0rem 4rem;
+}
+
+.custom-btn-filled{
+    background-color: var(--bg-purple-light);
+    color: white;
+    padding: 0.7rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    border: 0;
+}
+.custom-btn-outlined{
+    background-color: white;
+    border-color: var(--bg-purple-light);
+    color: var(--bg-purple-light);
+    padding: 0.7rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    border: 2;
+}
+
+section{
+    margin-top: 2rem;
+    position: relative;
+}
+
+.hero{
+    z-index: 0;
+    border-radius: 2rem;
+    background-image: url('./assets/hero_gradient.png');
+    width: 100%;
+    height: 33rem;
+    color: white;
+}
+.hero-content h1{
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.hero-content p{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.custom-place-1{
+    position: absolute;
+    top: 50px;
+    right: 1050px ;
+}
+.custom-place-2{
+    position: absolute;
+    top: 180px;
+    right: 1000px ;
+}
+.custom-place-3{
+    position: absolute;
+    top: 240px;
+    right: 1100px ;
+}
+.custom-place-4{
+    position: absolute;
+    top: 290px;
+    right: 1020px ;
+}
+.custom-place-5{
+    position: absolute;
+    top: 310px;
+    right: 890px ;
+}
+.custom-place-6{
+    position: absolute;
+    top: 60px;
+    right: 140px ;
+}
+.custom-place-7{
+    position: absolute;
+    top: 180px;
+    right: 110px ;
+}
+.custom-place-8{
+    position: absolute;
+    top: 230px;
+    right: 200px ;
+}
+.custom-place-9{
+    position: absolute;
+    top: 330px;
+    right: 140px ;
+}
+.custom-place-10{
+    position: absolute;
+    top: 360px;
+    right: 300px ;
+}
+
+.search{
+    bottom: -15px;
+    position: absolute;
+    width: 95%;
+    opacity: 86%;
+    z-index: 3;
+    background: white;
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    color: black;
+}
+.search p{
+    margin-bottom: 0.5rem !important;
+}
+.border-bottom{
+    padding: 0;
+    border-bottom: 2px solid gray;
+}
+
+.mt-3{
+    margin-top: 6rem  !important;
+}
+
+/* .row{
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+} */
+
+.col {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+  }
+
+.service-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.service-image{
+    background-color: #a14dd9;
+}
+
+
+.service-card-text{
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+.service-card-text p{
+    margin-bottom: 0 !important;
+}
+.card-img-top{
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+}
+.card-body{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color:  white !important;
+}
