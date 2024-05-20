@@ -68,15 +68,15 @@
                 <div class="user-options border-bottom ">
                     <div class=" pb-0 d-flex justify-content-between">
                     <p id="book-btn" class="option-btn active" onclick="toggleOption('book')">Book</p>
-                    <p id="schedule-btn" class="text-secondary option-btn active" onclick="toggleOption('schedule')">Schedule</p>
-                    <p id="track-btn" class="text-secondary option-btn active" onclick="toggleOption('track')">Track</p>
+                    <p id="schedule-btn" class="text-secondary option-btn" onclick="toggleOption('schedule')">Schedule</p>
+                    <p id="track-btn" class="text-secondary option-btn" onclick="toggleOption('track')">Track</p>
                     </div>
                    
                 </div>
                 <div class="mt-4 search-contents">
                   <div id="book-content" class="content d-flex  flex-column flex-md-row">
-                      <div class="row">
-                          <div class="col-md-3   d-flex flex-column">
+                      <div class="row gy-3 gy-md-0">
+                          <div class="col-md-3  d-flex flex-column">
                             <p>From</p>
                             <div class="input-group">
                               <select class="form-select" id="inputGroupSelect02">
@@ -123,11 +123,97 @@
                           <div class="col-md-2 "></div>
                       </div>
 
-                      <button class="book-btn"> book <img src="./assets/icons/blackBolt.png" alt=""> </button>
+                      <button class="book-btn"> Book <img src="./assets/icons/blackBolt.png" alt=""> </button>
 
                   </div>
-                  <div id="schedule-content" class="content d-none"><h1>Schedule </h1></div>
-                  <div id="track-content" class="content d-none"><h1>Track</h1> </div>
+                  <div id="schedule-content" class="content d-none flex-column flex-md-row">
+                    <div class="row gy-3">
+
+                      <div class="col-md-3  d-flex flex-column">
+                        <p>From</p>
+                        <div class="input-group">
+                          <select class="form-select" id="inputGroupSelect02">
+                            <option selected>Lucknow</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3  d-flex flex-column">
+                        <p>To where?</p>
+                        <div class="input-group">
+                          <select class="form-select" id="inputGroupSelect02">
+                            <option selected>Mumbai</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3  d-flex flex-column">
+                        <p>What are you shipping?</p>
+                        <div class="input-group">
+                          <select class="form-select" id="inputGroupSelect02">
+                            <option selected>Choose</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3  d-flex flex-column">
+                        <p>Volumetric weight</p>
+                        <div class="input-group">
+                          <select class="form-select" id="inputGroupSelect02">
+                            <option selected>Kgs</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3  d-flex flex-column">
+                        <p>Pick a date</p>
+                        <div class="input-group">
+                          <select class="form-select" id="inputGroupSelect02">
+                            <option selected>20/7/24</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-3  d-flex flex-column">
+                        <p>Pick a time</p>
+                        <div class="input-group">
+                          <select class="form-select" id="inputGroupSelect02">
+                            <option selected>Kgs</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="book-btn"> Schedule <img src="./assets/icons/blackBolt.png" alt=""> </button>
+                  </div>
+
+                  <div id="track-content" class="content d-none flex-column flex-md-row ">
+                      <div class="d-flex flex-column w-100 w-md-50">
+                        <p>Enter your tracking number</p>
+                        <div class="input-group">
+                          <input placeholder="67723DFQ2980" type="text" class="form-control" id="exampleCheck1">
+                        </div>
+                      </div>
+
+                      <button class="book-btn"> Track <img src="./assets/icons/blackBolt.png" alt=""> </button>
+                    </div>
+
               </div>
             </div>
         </div>
@@ -138,16 +224,9 @@
 
     <script>
       function toggleOption(option) {
-          // Remove active class from all buttons
           document.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('active'));
-          
-          // Hide all content divs
           document.querySelectorAll('.content').forEach(content => content.classList.add('d-none'));
-          
-          // Add active class to the clicked button
           document.getElementById(option + '-btn').classList.add('active');
-          
-          // Show the corresponding content div
           document.getElementById(option + '-content').classList.remove('d-none');
       }
   </script>

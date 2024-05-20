@@ -111,7 +111,7 @@ section {
 .custom-place-10 { top: 65%; right: 20%; }
 
 .search {
-    bottom: -110px;
+    top: 476px;
     position: absolute;
     width: 95%;
     opacity: 86%;
@@ -153,6 +153,7 @@ section {
 
 
 .book-btn{
+    font-weight: 500;
     background-color: var(--bg-green);
     text-decoration: none;
     border: none;
@@ -165,6 +166,7 @@ section {
     margin-left: 2rem;
 }
 .content{
+    
     display: flex;
     justify-content: start;
     align-items: end;
@@ -225,7 +227,7 @@ section {
     }
     
     .search{
-        bottom: -380px;
+        top: 478px;
         width: 100%;
     }
 
