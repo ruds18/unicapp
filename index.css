@@ -21,6 +21,7 @@
 :root {
     --bg-purple-light: #9E3CE1;
     --bg-border: #AAAAAA;
+    --bg-green:#D5F38D;
 }
 
 .padding-section {
@@ -110,7 +111,7 @@ section {
 .custom-place-10 { top: 65%; right: 20%; }
 
 .search {
-    bottom: -15px;
+    bottom: -110px;
     position: absolute;
     width: 95%;
     opacity: 86%;
@@ -125,6 +126,7 @@ section {
 
 .search p {
     margin-bottom: 0.5rem !important;
+    cursor: pointer;
 }
 
 .border-bottom {
@@ -135,6 +137,40 @@ section {
 .mt-3 {
     margin-top: 6rem !important;
 }
+
+.active{
+    color: black !important;
+    border-bottom: 0.1rem solid black;
+}
+
+.user-options div{
+    width: 25%;
+}
+
+.search-contents .row{
+  width: 80%;
+}
+
+
+.book-btn{
+    background-color: var(--bg-green);
+    text-decoration: none;
+    border: none;
+    padding: 0.8rem 2rem;
+    flex: end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    margin-left: 2rem;
+}
+.content{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+
 
 @media only screen and (max-width: 600px) {
     /* Phone */
@@ -159,6 +195,7 @@ section {
         width: 20%; /* Adjust this value as needed for smaller screens */
     }
 
+    
     .custom-place-1 { top: 2%; right: 80%; }
     .custom-place-2 { top: 20%; right: 55%; display: none}
     .custom-place-3 { top: 35%; right: 60%; display: none; }
@@ -187,6 +224,28 @@ section {
         flex-direction: column;
     }
     
+    .search{
+        bottom: -380px;
+        width: 100%;
+    }
 
+    .user-options div{
+        width: 100%;
+    }
+
+    .search-contents .row{
+        width: 100%;
+    }
+
+    .book-btn{
+        margin-top: 1rem;
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 
 }

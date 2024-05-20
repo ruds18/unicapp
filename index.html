@@ -66,25 +66,92 @@
 
             <div class="search">
                 <div class="user-options border-bottom ">
-                    <div class="w-25 pb-0 d-flex justify-content-between">
-                    <p>Book</p>
-                    <p class="text-secondary">Schedule</p>
-                    <p class="text-secondary">Track</p>
+                    <div class=" pb-0 d-flex justify-content-between">
+                    <p id="book-btn" class="option-btn active" onclick="toggleOption('book')">Book</p>
+                    <p id="schedule-btn" class="text-secondary option-btn active" onclick="toggleOption('schedule')">Schedule</p>
+                    <p id="track-btn" class="text-secondary option-btn active" onclick="toggleOption('track')">Track</p>
                     </div>
-
+                   
                 </div>
+                <div class="mt-4 search-contents">
+                  <div id="book-content" class="content d-flex  flex-column flex-md-row">
+                      <div class="row">
+                          <div class="col-md-3   d-flex flex-column">
+                            <p>From</p>
+                            <div class="input-group">
+                              <select class="form-select" id="inputGroupSelect02">
+                                <option selected>New delhi</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-3  d-flex flex-column">
+                            <p>To where?</p>
+                            <div class="input-group">
+                              <select class="form-select" id="inputGroupSelect02">
+                                <option selected>Mumbai</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-3  d-flex flex-column">
+                            <p>What are you shipping?</p>
+                            <div class="input-group">
+                              <select class="form-select" id="inputGroupSelect02">
+                                <option selected>choose</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-3  d-flex flex-column">
+                            <p>Volumetric weight</p>
+                            <div class="input-group">
+                              <select class="form-select" id="inputGroupSelect02">
+                                <option selected>Kgs</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-2 "></div>
+                      </div>
+
+                      <button class="book-btn"> book <img src="./assets/icons/blackBolt.png" alt=""> </button>
+
+                  </div>
+                  <div id="schedule-content" class="content d-none"><h1>Schedule </h1></div>
+                  <div id="track-content" class="content d-none"><h1>Track</h1> </div>
+              </div>
             </div>
         </div>
       </section>
         
-        <section>
-            <div class="padding-section d-flex flex-column justify-content-center align-items-center">
-                <h1  class="text-center">Our Services</h1>
-                <p class="text-center mt-3 mb-3">A personal <span style="color: var(--bg-purple-light);">delivery</span> partner for everyone</p>
-            </div>
-        </section>
 
     </main>
+
+    <script>
+      function toggleOption(option) {
+          // Remove active class from all buttons
+          document.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('active'));
+          
+          // Hide all content divs
+          document.querySelectorAll('.content').forEach(content => content.classList.add('d-none'));
+          
+          // Add active class to the clicked button
+          document.getElementById(option + '-btn').classList.add('active');
+          
+          // Show the corresponding content div
+          document.getElementById(option + '-content').classList.remove('d-none');
+      }
+  </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
