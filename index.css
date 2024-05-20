@@ -153,6 +153,7 @@ section {
 
 
 .book-btn{
+    color: black;
     font-weight: 500;
     background-color: var(--bg-green);
     text-decoration: none;
