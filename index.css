@@ -342,6 +342,21 @@ section {
 }
 
 
+.user-guide{
+    margin-top: 10rem !important;
+}
+.use-guide-container{
+    width: 55% !important;
+}
+
+.user-guide-container  img{
+    width: 250px !important;
+}
+
+.user-guide-heading{
+    font-size: 2rem;
+}
+
 @media only screen and (max-width: 600px) {
     /* Phone */
     main {
@@ -481,5 +496,16 @@ section {
         left: 80px;
     }
     
+    .use-guide-container{
+        width: 100%;
+    }
+
+    .user-guide-container  img{
+        width: 200px !important;
+    }
+
+    .user-guide-heading{
+        font-size: 1rem;
+    }
 
 }
