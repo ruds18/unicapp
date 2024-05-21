@@ -357,6 +357,18 @@ section {
     font-size: 2rem;
 }
 
+.reliable-section-heading{
+    margin-top: 10rem;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.reliable-card{
+    background-color: black;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
 @media only screen and (max-width: 600px) {
     /* Phone */
     main {
@@ -506,6 +518,18 @@ section {
 
     .user-guide-heading{
         font-size: 1rem;
+    }
+
+    .reliable-section-heading{
+        margin-top: 5rem;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    
+    .reliable-card{
+        background-color: black;
+        padding: 1rem;
+        border-radius: 2rem;
     }
 
 }
