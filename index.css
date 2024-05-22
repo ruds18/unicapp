@@ -15,6 +15,11 @@
     }
 }
 
+/* Navbar*/
+.nav-container{
+    margin: 0rem 4rem !important;
+}
+
 .radial-card{
     border-radius: 1rem;
     position: relative;
@@ -369,10 +374,93 @@ section {
     border-radius: 2rem;
 }
 
+
+
+.brands-section {
+    margin-top: 6rem;
+    position: relative;
+    width: 100%;
+}
+
+.brands-container {
+    padding: 1rem 0rem;
+    width: 100%;
+    position: absolute;
+    background-color: var(--bg-green);
+}
+
+.brands-container h1 {
+    font-weight: 700;
+    margin: 2rem 0rem;
+    font-size: 1.5rem;
+}
+
+
+
+/* Define keyframes for scrolling animation */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7)); }
+  }
+  
+  /* Slider styling */
+  .slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+
+  
+  .slider::before,
+  .slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  
+  .slide-track {
+    margin-top: 1rem;
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  
+  .slide {
+    margin-left: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.4rem 1rem;
+  }
+  
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
     /* Phone */
     main {
         margin: 0rem 1rem;
+    }
+
+    .nav-container{
+        margin: 0rem 1rem !important;
     }
     
     .hero-content h1 {
