@@ -376,7 +376,7 @@ section {
 
 
 
-.brands-section {
+.brands-section{
     margin-top: 6rem;
     position: relative;
     width: 100%;
@@ -454,7 +454,7 @@ section {
 }
 
 .contact-container{
-    margin-top: 20rem;
+    margin-top: 25rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -511,6 +511,88 @@ section {
 }
 
 
+.footer-container{
+    border-radius: 1rem;
+    position: relative;
+    padding: 2rem;
+    margin-top: 10rem;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    color: white !important;
+
+}
+
+
+.footer-stamp{
+   width: 50%;
+    display: flex;
+    color: white !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-stamp-contents{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-stamp-contents h1{
+    font-weight: 100;
+    opacity: 60%;
+}
+
+.footer-stamp-contents img{
+   width: 50px;
+}
+
+.footer-reach-us  img{
+    width: 50px;
+}
+
+.footer-reach-us{
+    display: flex;
+    align-items: center;
+}
+
+.footer-reach-us p:first-of-type{
+    margin-left: 1rem;
+}
+
+.footer-menus{
+    width: 30%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.footer-menu h1{
+    font-weight: 100;
+    opacity: 60%;
+}
+
+
+.footer-service h1{
+    font-weight: 100;
+    opacity: 60%;
+}
+
+.footer-hallmark{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.footer-logo{
+    position: absolute;
+    width: 700px;
+    right: 10px;
+    bottom: -35px;
+    
+}
 
 
 
@@ -702,5 +784,44 @@ section {
         margin-top: 1.5rem;
         font-size: 1rem;
       }
+
+    
+   .footer-container{
+    padding: 1rem;
+    margin-bottom: 5rem;
+   }
+
+      .footer-stamp{
+        width: 100%;
+         display: flex;
+         color: white !important;
+         flex-direction: column;
+         align-items: center;
+         
+     }
+
+     .socials{
+        margin-top: 1rem;
+     }
+
+     .footer-menus{
+        width: 100%;
+        margin: 2rem 0rem 0rem 0rem !important;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .footer-hallmark{
+        text-align: center;
+        margin: 2rem 0rem 0rem 0rem !important;
+        font-weight: 200;
+        font-size: 1rem;
+    }
+
+    .footer-logo{
+        width: 300px;
+        bottom: -25px;
+    }
 
 }
