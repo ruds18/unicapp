@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+body{
+    font-family: "Poppins", "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 30% !important;
+    border-radius: 2rem;
+}
+
+.logo-header img{
+    width: 150px;
+}
+
+.contents{
+    margin-top: 1rem;
+    width: 100% !important;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-header img{
+    width: 40px;
+}
+.content-header h1{
+    font-weight: 200;
+    font-size: 1.8rem;
+}
+
+.user-inputs{
+margin-top: 1rem;
+}
+
+form input{
+ margin-top: 1rem;
+}
+
+form button{
+    background-color: #9E3CE1;
+    border-radius: 1rem;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+    border: 0;
+    padding: 1rem 0rem;
+    font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 90% !important;
+    }
+
+    form button{
+        background-color: #9E3CE1;
+        border-radius: 1rem;
+        color: white;
+        text-align: center;
+        width: 100%;
+        margin-top: 2rem;
+        border: 0;
+        padding: 0.5rem 0rem;
+        font-size: 1rem;
+    }
+}
